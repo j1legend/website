@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>END POVERTY - end poverty in all forms</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+		<!-- <link rel="stylesheet" href="http://localhost:3002/dist/aos.css" /> -->
+		<link rel="stylesheet" href="/dist/css/project-styles.css"">
+
+	</head>
+  <header class="hero">
+    <div class="hero-center">
+      <h1 class="hero__logo" data-aos="zoom-in">PROJECTS</h1>
+      <h2 style = "color:grey"class="hero__text" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">End poverty in all forms</h2>
+    </div>
+    <span class="hero__scroll" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
+      Scroll down <br>
+      <i class="chevron bottom"></i>
+    </span>
+  </header>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-light-blue w3-card w3-left-align w3-large">
+          <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="/index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+          <a href="/video.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Media</a>
+          <a href="/project.html" class="w3-bar-item w3-button w3-padding-large w3-white">Projects</a>
+          <a href="/sources.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sources</a>
+        </div> 
+      
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+          <a href="/index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+          <a href="/video.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Video</a>
+          <a href="/project.html" class="w3-bar-item w3-button w3-padding-large w3-white">Projects</a>
+          <a href="/sources.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sources</a>
+        </div>
+    </div>
+
+    <section class="section section--code">
+			<div class="container">
+				<h2 class="section-title" style="color: grey;">Zoom</h2>
+				<div class="code code--small code--left code--large" data-aos="zoom-in">
+					<div class="backgrounder">
+						<code style="color: #FF8C00">Global Citizen</code>
+						<br/>
+						<code style="font-size: 25px;font-family: Helvetica,Tahoma;">This organaisation takes small steps to create a great impact. There is data about all of the individual action taken on here - https://www.globalcitizen.org/en/impact/.</code>
+					</div>
+				</div>
+				<div class="code code--large code--right" data-aos="zoom-in-up">
+					<div class="backgrounder">
+						<code style="color: #FF8C00">HOPE</code>
+						<br/>
+						<code style="font-size: 25px;font-family: Helvetica,Tahoma;"> They mainly focus on food distribution and collaborate the UN WFP(United Nations World Food program). The focus on local communites in 13 different countries including schools and hospitals-https://hope-charity.org/</code>
+					</div>
+				</div>
+				<div class="code code--large code--left" data-aos="zoom-in-down">
+					<div class="backgrounder">
+						<code style="color: #FF8C00">World Vision</code>
+						<br/>
+						<code style="font-size: 25px;font-family: Helvetica,Tahoma;"> World Vision makes it very easy and simple to donate to children and bring essential items such as food and water toward them. This works through a program where members who sign up are able to see who they are funding and vice versa allowing for more intimate relationships between the donor and the beneficiary. https://www.worldvision.org/</code>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
+
+		<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+		</script>
+
+		<script>
+			hljs.initHighlightingOnLoad();
+
+			$('.hero__scroll').on('click', function(e) {
+				$('html, body').animate({
+					scrollTop: $(window).height()
+				}, 1200);
+			});
+		</script>
+</html>

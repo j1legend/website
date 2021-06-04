@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    background-color: #ccc;
+    justify-content: center;
+    align-items: center;
+        --stripe: #cfd8dc;
+        --bg: #e1e1e1;
+      
+        background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+          linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+          linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+          linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+        background-size: 100px 100px;
+        background-color: var(--stripe);
+    height: 100vh;
+}
+
+
+.video {
+    width: 100%;
+}
+
+.buttons {
+    padding: 10px;
+}
+
+.buttons button {
+    background: none;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+.audio-cont{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+body {
+    --stripe: #cfd8dc;
+    --bg: #e1e1e1;
+  
+    background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+      linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+      linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+      linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: var(--stripe);
+  }
+.buttons button:before {
+    content: '\f144';
+    font-family: 'Font Awesome 5 Free';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+.c-video {
+    width: 100%;
+    max-width: 1080px;
+    position: relative;
+    overflow: hidden;
+}
+
+.c-video:hover .controls {
+    transform: translateY(0);
+}
+
+.controls   {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: rgba(0,0,0,0.7);
+    transform: translateY(100%) translateY(-5px);
+    transition: all .2s;
+}
+
+
+
+.buttons button.play:before {
+    content: '\f144';
+    font-family: 'Font Awesome 5 Free';    
+}
+
+.buttons button.pause:before {
+    content: '\f28b';
+    font-family: 'Font Awesome 5 Free';
+}
+
+.playbar{
+    height: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.65);
+}
+
+/* This represents the progress bar */
+.progress{
+    height: 10px;
+    background-color: orangered;
+}

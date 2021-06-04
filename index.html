@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudlflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>END POVERTY - end poverty in all forms</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+		<!-- <link rel="stylesheet" href="http://localhost:3002/dist/aos.css" /> -->
+		<link rel="stylesheet" href="dist/css/styles.css" />
+
+	</head>
+    
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-light-blue w3-card w3-left-align w3-large">
+          <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+          <a href="/video.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Media</a>
+          <a href="/project.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projects</a>
+          <a href="/sources.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sources</a>
+        </div>
+      
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+          <a href="/video.html" class="w3-bar-item w3-button w3-padding-large">Video</a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+        </div>
+    </div>
+	<body>
+
+		<div class="backgrounds overlay">
+			<div class="background" data-aos="fade-in" data-aos-duration="1500" data-aos-anchor=".section--hero" style="background-image: url('img/bg.jog.jpeg');"></div>
+		</div>
+
+		<header class="hero">
+			<div class="hero-center">
+				<h1 class="hero__logo" data-aos="zoom-in">END POVERTY</h1>
+				<h2 class="hero__text" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">End poverty in all forms</h2>
+			</div>
+			<span class="hero__scroll" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
+				Scroll down <br>
+				<i class="chevron bottom"></i>
+			</span>
+		</header>
+
+		<section class="section section--code">
+			<div class="container">
+				<h2 class="section-title">Introduction</h2>
+				<div class="code code--large code--left " data-aos="fade-up">
+					<div class="backgrounder">
+						<code style="color: #FF8C00;">What is Poverty?</code>
+						<code style="font-size: 25px;font-family: Helvetica,Tahoma">The UN definition of poverty is anyone who lives under the wage of 1.90$ a day. The dictionary defines it as anyone who cannot afford basic human necessities;however, poverty and problems caused by it are much more nuanced. </code>
+					</div>
+				</div>
+				<div class="code code--large code--right" data-aos="fade-down">
+					<div class="backgrounder">
+						<code style="color: #FF8C00;">Extreme Poverty</code>
+						<code style="font-size: 25px;font-family: Helvetica,Tahoma;">Extreme poverty is the state of being so poor that basic human necessities such as food, water, and shelter seem hard to obtain and are in a constant struggle of survival. 9.8% of the world is in extreme poverty which is 689 million people . </code>
+					</div>
+				</div>
+				<div class="code code--large code--left" data-aos="fade-right">
+					<div class="backgrounder">
+						<code style="color: #FF8C00;">Relative Poverty</code>
+						<code style="font-size: 25px;font-family: Helvetica,Tahoma;">Relative Poverty is the state of not being able to afford proper education, good working environments and if compared to the rest a group or country poor. For example, in the US the relative poverty line is at 38$ a month which is around 30 times greater than that of the extreme poverty line.  </code>
+					</div>
+				</div>
+		</section>
+
+		<section>
+			<h2 class="section-title">DATA</h2>
+			
+			<div style="height: 60%;width: 60%;display: block;margin-left: auto;margin-right: auto;"><canvas id="myChart" width="100" height="100"></canvas></div>
+		</section >
+		
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
+
+		<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+		</script>
+		<script>
+			var ctx = document.getElementById('myChart').getContext('2d');
+			var myChart = new Chart(ctx, {
+				type: 'doughnut',
+				data: {
+					labels: ['Extreme Poverty(In Millions)', 'Relative Poverty(In Millions)', 'Neither(In Millions)'],
+					datasets: [{
+						label: '# of Votes',
+						data: [689, 1300, 5911],
+						backgroundColor: [
+							'rgba(255, 99, 132, 0.8)',
+							'rgba(54, 162, 235, 0.8)',
+							'rgba(255, 206, 86, 0.8)',
+						],
+						borderColor: [
+							'rgba(255, 99, 132, 1)',
+							'rgba(54, 162, 235, 1)',
+							'rgba(255, 206, 86, 1)',
+						],
+						borderWidth: 1
+					}]
+				},
+				options: {
+					plugins: {
+						legend: {
+							labels :{
+								color: '#fff',
+							}
+						}
+					}
+					
+					
+       			 }
+			});
+		</script>
+		<script>
+			hljs.initHighlightingOnLoad();
+
+			$('.hero__scroll').on('click', function(e) {
+				$('html, body').animate({
+					scrollTop: $(window).height()
+				}, 1200);
+			});
+		</script>
+	</body>
+</html>
